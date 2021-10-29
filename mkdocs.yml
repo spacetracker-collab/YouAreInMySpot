@@ -1,0 +1,28 @@
+site_name: Swipeable Card
+nav:
+  - Home: index.md
+  - "Quick start": quick-start.md
+  - Guide: 
+    - "Swipeable widget": guide/swipeable-widget.md
+    - "Swipeable widget controller": guide/swipeable-widget-controller.md
+    - "Swipeable widget slide": guide/swipeable-widget-slide.md
+  - Examples:
+    - "Basic example": examples/basic.md
+    - "Lower performance example": examples/low-performance.md
+  - More: more.md
+
+repo_name: ninest/swipeable_card
+repo_url: https://github.com/ninest/swipeable_card
+
+
+theme:
+  name: material
+  features:
+    - tabs
+    # - instant
+  palette:
+    primary: black
+    accent: indigo
+
+markdown_extensions:
+  - codehilite
