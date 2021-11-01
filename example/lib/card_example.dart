@@ -5,9 +5,11 @@ class CardExample extends StatelessWidget {
     Key key,
     this.color = Colors.indigo,
     this.text = "Card Example",
+    this.number = "Card Number",
   }) : super(key: key);
   final Color color;
   final String text;
+  final String number;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class CardExample extends StatelessWidget {
       ),
 
       child: Text(
-        text,
+        text+number,
         style: TextStyle(
           fontSize: 36.0,
           // color: Colors.white,
@@ -35,6 +37,7 @@ class CardExample extends StatelessWidget {
           fontWeight: FontWeight.w900,
         ),
       ),
+
     );
   }
 }

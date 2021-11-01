@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   swipeable_card:
+  flutter_automation: ^1.1.4
 
 dev_dependencies:
   flutter_test:

@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   share_plus: ^3.0.4
+  fluttertoast: ^8.0.8
+
 
 dev_dependencies:
   flutter_test:
