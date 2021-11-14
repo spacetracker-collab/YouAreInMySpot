@@ -6,9 +6,11 @@ import 'package:flutter/services.dart';
 
 import 'example_route.dart';
 import 'example_slide_route.dart';
+import 'package:oktoast/oktoast.dart';
+
 
 void main() => runApp(MyApp());
-
+/*
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,5 +27,23 @@ class MyApp extends StatelessWidget {
       // home: ExampleRoute(),
       home: ExampleRouteSlide(),
     );
+  }
+}
+*/
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return OKToast(
+        child : MaterialApp(
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData.dark().copyWith(
+            // make the background color darker to put the cards in focus!
+            scaffoldBackgroundColor: Color(0xFF111111),
+          ),
+          // home: ExampleRoute(),
+          // home: ExampleRoute(),
+          home: ExampleRouteSlide(),
+        ));
+
   }
 }

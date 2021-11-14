@@ -6,13 +6,17 @@ class CardExample extends StatelessWidget {
     this.color = Colors.indigo,
     this.text = "Card Example",
     this.number = "Card Number",
+    this.imageLocation ="assets/images/ic_launcher.png",
   }) : super(key: key);
   final Color color;
   final String text;
   final String number;
+  final String imageLocation;
 
   @override
   Widget build(BuildContext context) {
+
+
     return Container(
       height: 450,
       width: 320,
@@ -28,14 +32,39 @@ class CardExample extends StatelessWidget {
         ),
       ),
 
-      child: Text(
-        text+number,
-        style: TextStyle(
-          fontSize: 36.0,
-          // color: Colors.white,
-          color: Colors.white.withOpacity(0.8),
-          fontWeight: FontWeight.w900,
-        ),
+      child: new Column(
+        children: [
+          new Container(
+            child: Text(
+              text+number,
+              style: TextStyle(
+                fontSize: 36.0,
+                // color: Colors.white,
+                color: Colors.white.withOpacity(0.8),
+                fontWeight: FontWeight.w900,
+              ),
+            ),
+
+          ),
+/*
+    new Container(
+    decoration: BoxDecoration(
+    color: Colors.orangeAccent,
+    image: DecorationImage(
+    image: AssetImage("assets/images/romantic-dinner.png"),
+    fit: BoxFit.fitWidth,
+    alignment: Alignment.topCenter,
+    ),
+    ),),
+*/
+          new Container(
+            color: color,
+            //    color: Colors.grey[200],
+
+            child: new Image.asset(this.imageLocation),
+            alignment: Alignment.center,
+          ),
+        ],
       ),
 
     );
